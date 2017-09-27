@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/mainActivity_home"
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:background="@drawable/ic_home_or" />
+
+            <ImageView
+                android:id="@+id/mainActivity_search"
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:layout_toRightOf="@+id/mainActivity_home"
+                android:background="@drawable/ic_search_gr" />
+
+            <ImageView
+                android:id="@+id/mainActivity_heart"
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:layout_toRightOf="@+id/mainActivity_search"
+                android:background="@drawable/ic_heart_gr" />
+
+            <ImageView
+                android:id="@+id/mainActivity_setting"
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_setting_gr" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainActivity_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainActivity_toolbar" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0efe9">
+
+    <ImageView
+        android:id="@+id/itemStore_image"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/itemStore_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/itemStore_image"
+        android:textColor="#353333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/itemStore_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemStore_name"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/itemStore_image"
+        android:textColor="#6c6865"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/itemStore_favorite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="36dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/itemStore_image"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#353333" />
+
+</RelativeLayout>

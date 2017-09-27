@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="202dp"
+        android:layout_height="151dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:text="삭제하시겠습니까?"
+            android:src="@drawable/graybox"
+            />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="40dp"
+                android:id="@+id/left_button"
+                android:src="@drawable/ic_popup_no"
+                />
+
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="40dp"
+                android:id="@+id/right_button"
+                android:src="@drawable/ic_popup_yes"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

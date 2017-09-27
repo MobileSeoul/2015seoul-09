@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/storeActivity_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/bg"
+        android:contentInsetStart="0dp"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/storeActivity_backBtn"
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:src="@drawable/ic_top_back" />
+
+            <TextView
+                android:id="@+id/storeActivity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="63dp"
+                android:textColor="#ff6633"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/storeActivity_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="49dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="208dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/storeActivity_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="208dp" />
+
+                <ImageView
+                    android:id="@+id/storeActivity_arrowLeft"
+                    android:layout_width="15dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/list_arrow_left" />
+
+                <ImageView
+                    android:id="@+id/storeActivity_arrowRight"
+                    android:layout_width="15dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/list_arrow_right" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/storeActivity_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#353333"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/storeActivity_mainSaleIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="21dp"
+                    android:layout_below="@+id/storeActivity_name"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_list_check" />
+
+                <TextView
+                    android:id="@+id/storeActivity_mainSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/storeActivity_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/storeActivity_mainSaleIcon" />
+
+                <ImageView
+                    android:id="@+id/storeActivity_phoneIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="21dp"
+                    android:layout_below="@+id/storeActivity_mainSale"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_list_phone" />
+
+                <TextView
+                    android:id="@+id/storeActivity_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/storeActivity_mainSale"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/storeActivity_phoneIcon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/storeActivity_menuTxt"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="#f0efe9"
+                android:paddingLeft="40dp"
+                android:paddingTop="30dp"
+                android:text="메뉴"
+                android:textColor="#353333"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/market_meun_List"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+            <View
+                android:id="@+id/storeActivity_view"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="20dp"
+                android:background="#f0efe9" />
+
+            <fragment
+                android:id="@+id/storeActivity_map"
+                class="com.kimchiguk.sizanggaja.WorkaroundMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="215dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/storeActivity_goToBlog"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_blog" />
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textview_setting_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="버전"
+            android:textColor="#353333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textview_setting_cur_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_setting_version"
+            android:layout_marginTop="30dp"
+            android:text="현재 버전 v 1.00"
+            android:textColor="#595858"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/view_setting_firstline"
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textview_setting_cur_version"
+            android:layout_marginTop="30dp"
+            android:background="#353333" />
+
+        <TextView
+            android:id="@+id/textview_setting_madeby_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_setting_firstline"
+            android:layout_marginTop="30dp"
+            android:text="시장가자는"
+            android:textColor="#353333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textview_setting_madeby1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_setting_madeby_title"
+            android:layout_marginTop="21dp"
+            android:text="시장가자!는 주변의 볼거리와 즐길 거리가 많은"
+            android:textColor="#595858"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textview_setting_madeby2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_setting_madeby1"
+            android:layout_marginTop="9dp"
+            android:text="시장을 소개합니다. 시장으로 가봅시다!"
+            android:textColor="#595858"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/view_setting_secondline"
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textview_setting_madeby2"
+            android:layout_marginTop="20pt"
+            android:background="#353333" />
+
+        <TextView
+            android:id="@+id/textview_setting_madeby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_setting_secondline"
+            android:layout_marginTop="30dp"
+            android:text="만든 사람들"
+            android:textColor="#353333"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView_setting_madeby"
+            android:layout_width="280dp"
+            android:layout_height="91dp"
+            android:background="@drawable/setting_face"
+            android:layout_below="@+id/textview_setting_madeby"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textview_setting_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_setting_madeby"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Copyright 2015. 시장가자.\n      all rights reserved."
+            android:textSize="10dp" />
+    </RelativeLayout>
+</RelativeLayout>

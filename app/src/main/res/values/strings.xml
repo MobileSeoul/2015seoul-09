@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">시장가자!</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="bg">#FFFFFFFF</color>
+    <color name="dialogbg">#353333</color>
+</resources>
